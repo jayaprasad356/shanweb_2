@@ -80,7 +80,7 @@
                                     <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                                 </li>
 
-                                <li <?php echo (CURRENT_PAGE == "customers.php" || CURRENT_PAGE == "add_customer.php") ? 'class="active"' : ''; ?>>
+                                <!-- <li <?php echo (CURRENT_PAGE == "customers.php" || CURRENT_PAGE == "add_customer.php") ? 'class="active"' : ''; ?>>
                                     <a href="#"><i class="fa fa-user-circle fa-fw"></i> Customers<span class="fa arrow"></span></a>
                                     <ul class="nav nav-second-level">
                                         <li>
@@ -90,9 +90,21 @@
                                         <a href="add_customer.php"><i class="fa fa-plus fa-fw"></i>Add New</a>
                                     </li>
                                     </ul>
-                                </li>
-                                <li>
+                                </li> -->
+                                <!-- <li>
                                     <a href="admin_users.php"><i class="fa fa-users fa-fw"></i> Users</a>
+                                </li> -->
+                                <li <?php echo (CURRENT_PAGE == "users.php" || CURRENT_PAGE == "add_user.php") ? 'class="active"' : ''; ?>>
+                                    <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
+                                </li>
+                                <li <?php echo (CURRENT_PAGE == "edit_settings.php" || CURRENT_PAGE == "edit_settings.php") ? 'class="active"' : ''; ?>>
+                                    <a href="edit_settings.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                                </li>
+                                <li <?php echo (CURRENT_PAGE == "codes.php" || CURRENT_PAGE == "codes.php") ? 'class="active"' : ''; ?>>
+                                    <a href="codes.php"><i class="fa fa-refresh fa-fw"></i> Generate EVC Codes</a>
+                                </li>
+                                <li <?php echo (CURRENT_PAGE == "bills.php" || CURRENT_PAGE == "bills.php") ? 'class="active"' : ''; ?>>
+                                    <a href="bills.php"><i class="fa fa-file fa-fw"></i>Bills</a>
                                 </li>
                             </ul>
                         </div>
