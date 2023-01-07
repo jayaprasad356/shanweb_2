@@ -90,8 +90,8 @@
                                         <a href="add_customer.php"><i class="fa fa-plus fa-fw"></i>Add New</a>
                                     </li>
                                     </ul>
-                                </li> -->
-                                <!-- <li>
+                                </li>
+                                <li>
                                     <a href="admin_users.php"><i class="fa fa-users fa-fw"></i> Users</a>
                                 </li> -->
                                 <li <?php echo (CURRENT_PAGE == "users.php" || CURRENT_PAGE == "add_user.php") ? 'class="active"' : ''; ?>>
