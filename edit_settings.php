@@ -3,10 +3,12 @@ session_start();
 require_once './config/config.php';
 require_once 'includes/auth_validate.php';
 
-
+$db = getDbInstance();
 // Sanitize if you want
 $customer_id = filter_input(INPUT_GET, 1, FILTER_VALIDATE_INT);
 $operation = filter_input(INPUT_GET, 'operation',FILTER_SANITIZE_STRING); 
+$sql = "SELECT * FROM `settings`";
+$res = $db->rawQuery($sql);
 ($operation == 'edit') ? $edit = true : $edit = false;
  $db = getDbInstance();
 

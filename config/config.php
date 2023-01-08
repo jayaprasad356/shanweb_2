@@ -17,9 +17,9 @@ require_once BASE_PATH . '/helpers/helpers.php';
  */
 
 define('DB_HOST', "localhost");
-define('DB_USER', "u743445510_shan_evc2");
-define('DB_PASSWORD', "Shanevc@01");
-define('DB_NAME', "u743445510_shan_evc2");
+define('DB_USER', "USERNAME HERE");
+define('DB_PASSWORD', "PASSWORD HERE");
+define('DB_NAME', "DATABASE NAME HERE");
 
 /**
  * Get instance of DB object

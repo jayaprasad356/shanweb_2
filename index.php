@@ -29,11 +29,11 @@ include_once('includes/header.php');
                         </div>
                         <div class="col-xs-9 text-right">
                             <div class="huge"><?php echo $numCustomers; ?></div>
-                            <div>Customers</div>
+                            <div>Users</div>
                         </div>
                     </div>
                 </div>
-                <a href="customers.php">
+                <a href="users.php">
                     <div class="panel-footer">
                         <span class="pull-left">View Details</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -42,7 +42,7 @@ include_once('includes/header.php');
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <!-- <div class="col-lg-3 col-md-6">
             <div class="panel panel-green">
                 <div class="panel-heading">
                     <div class="row">
@@ -63,7 +63,7 @@ include_once('includes/header.php');
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-3 col-md-6">
         
         </div>

@@ -69,37 +69,7 @@ include BASE_PATH . '/includes/header.php';
     </div>
     <?php include BASE_PATH . '/includes/flash_messages.php';?>
 
-    <!-- Filters -->
-    <div class="well text-center filter-form">
-        <form class="form form-inline" action="">
-            <label for="input_search">Search</label>
-            <input type="text" class="form-control" id="input_search" name="search_string" value="<?php echo xss_clean($search_string); ?>">
-            <label for="input_order">Order By</label>
-            <select name="filter_col" class="form-control">
-                <?php
-foreach ($user->setOrderingValues() as $opt_value => $opt_name):
-	($order_by === $opt_value) ? $selected = 'selected' : $selected = '';
-	echo ' <option value="' . $opt_value . '" ' . $selected . '>' . $opt_name . '</option>';
-endforeach;
-?>
-            </select>
-            <select name="order_by" class="form-control" id="input_order">
-                <option value="Asc" <?php
-if ($order_by == 'Asc') {
-	echo 'selected';
-}
-?> >Asc</option>
-                <option value="Desc" <?php
-if ($order_by == 'Desc') {
-	echo 'selected';
-}
-?>>Desc</option>
-            </select>
-            <input type="submit" value="Go" class="btn btn-primary">
-        </form>
-    </div>
-    <hr>
-    <!-- //Filters -->
+
 
 
     <div id="export-section">

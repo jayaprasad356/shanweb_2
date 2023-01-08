@@ -64,8 +64,8 @@ include BASE_PATH.'/includes/header.php';
 			<div class="panel-heading">Please Sign in</div>
 			<div class="panel-body">
 				<div class="form-group">
-					<label class="control-label">username</label>
-					<input type="text" name="username" class="form-control" required="required">
+					<label class="control-label">email</label>
+					<input type="email" name="email" class="form-control" required="required">
 				</div>
 				<div class="form-group">
 					<label class="control-label">password</label>
