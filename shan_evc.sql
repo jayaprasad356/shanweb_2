@@ -126,9 +126,9 @@ INSERT INTO `evc_codes` (`id`, `evc_code`, `amount`, `created_at`, `updated_at`)
 
 CREATE TABLE `settings` (
   `id` int(11) NOT NULL,
-  `day_electricity_meter_reading` int(11) DEFAULT NULL,
-  `night_electricity_meter_reading` int(11) DEFAULT NULL,
-  `day_gas_meter_reading` int(11) DEFAULT NULL,
+  `day_emr_price` int(11) DEFAULT NULL,
+  `night_emr_price` int(11) DEFAULT NULL,
+  `day_gmr_price` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -137,7 +137,7 @@ CREATE TABLE `settings` (
 -- Dumping data for table `settings`
 --
 
-INSERT INTO `settings` (`id`, `day_electricity_meter_reading`, `night_electricity_meter_reading`, `day_gas_meter_reading`, `created_at`, `updated_at`) VALUES
+INSERT INTO `settings` (`id`, `day_emr_price`, `night_emr_price`, `day_gmr_price`, `created_at`, `updated_at`) VALUES
 (1, 120, 100, 45, NULL, '2023-01-04 01:25:34');
 
 -- --------------------------------------------------------
@@ -151,7 +151,7 @@ CREATE TABLE `users` (
   `email` varchar(200) DEFAULT NULL,
   `password` varchar(200) DEFAULT NULL,
   `property_type` text DEFAULT NULL,
-  `bedrooms_count` int(11) DEFAULT NULL,
+  `total_bedrooms` int(11) DEFAULT NULL,
   `wallet` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -161,7 +161,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `password`, `property_type`, `bedrooms_count`, `wallet`, `created_at`, `updated_at`) VALUES
+INSERT INTO `users` (`id`, `email`, `password`, `property_type`, `total_bedrooms`, `wallet`, `created_at`, `updated_at`) VALUES
 (1, 'test@gmail.com', 'test123', 'Air Cooler', 4, 2500, NULL, NULL);
 
 --

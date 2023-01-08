@@ -22,9 +22,9 @@ class User
     {
         $ordering = [
             'id' => 'ID',
-            'bedrooms_count' => 'Bedrooms Count',
-            'email' => 'Email Id',
-            'property_type' => 'Property Type',
+            'total_bedrooms' => 'Bedrooms Count',
+            'user_email_id' => 'Email Id',
+            'property_classify' => 'Property Classify',
             'created_at' => 'Created at',
             'updated_at' => 'Updated at'
         ];

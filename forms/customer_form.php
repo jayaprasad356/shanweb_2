@@ -44,8 +44,8 @@
             </select>
     </div>  
     <div class="form-group">
-        <label for="email">Email</label>
-            <input  type="email" name="email" value="<?php echo htmlspecialchars($edit ? $customer['email'] : '', ENT_QUOTES, 'UTF-8'); ?>" placeholder="E-Mail Address" class="form-control" id="email">
+        <label for="user_email_id">Email</label>
+            <input  type="email" name="user_email_id" value="<?php echo htmlspecialchars($edit ? $customer['user_email_id'] : '', ENT_QUOTES, 'UTF-8'); ?>" placeholder="E-Mail Address" class="form-control" id="user_email_id">
     </div>
 
     <div class="form-group">

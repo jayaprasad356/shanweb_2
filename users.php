@@ -31,13 +31,13 @@ if (!$order_by) {
 
 //Get DB instance. i.e instance of MYSQLiDB Library
 $db = getDbInstance();
-$select = array('id', 'email','password', 'property_type', 'bedrooms_count','wallet', 'created_at', 'updated_at');
+$select = array('id', 'user_email_id','password', 'property_classify', 'total_bedrooms','wallet', 'created_at', 'updated_at');
 
 //Start building query according to input parameters.
 // If search string
 if ($search_string) {
-	$db->where('email', '%' . $search_string . '%', 'like');
-	$db->orwhere('property_type', '%' . $search_string . '%', 'like');
+	$db->where('user_email_id', '%' . $search_string . '%', 'like');
+	$db->orwhere('property_classify', '%' . $search_string . '%', 'like');
     $db->orwhere('wallet', '%' . $search_string . '%', 'like');
 }
 
@@ -123,10 +123,10 @@ if ($order_by == 'Desc') {
             <?php foreach ($rows as $row): ?>
             <tr>
                 <td><?php echo $row['id']; ?></td>
-                <td><?php echo xss_clean($row['email']); ?></td>
+                <td><?php echo xss_clean($row['user_email_id']); ?></td>
                 <td><?php echo xss_clean($row['password']); ?></td>
-                <td><?php echo xss_clean($row['property_type']); ?></td>
-                <td><?php echo xss_clean($row['bedrooms_count']); ?></td>
+                <td><?php echo xss_clean($row['property_classify']); ?></td>
+                <td><?php echo xss_clean($row['total_bedrooms']); ?></td>
                 <td><?php echo xss_clean($row['wallet']); ?></td>
                 <!-- <td>
                     <a href="edit_customer.php?customer_id=<?php echo $row['id']; ?>&operation=edit" class="btn btn-primary"><i class="glyphicon glyphicon-edit"></i></a>
